@@ -135,6 +135,7 @@ void rm_list(Tr *tree, int dot){
                 tree->R = ptr;
                 ptr->Pre = tree;
                 }
+                printf("Deleted!\n");
             }
         }
 
@@ -152,6 +153,7 @@ void rm_list(Tr *tree, int dot){
                 ptr = ptr->Pre;
                 free(ptr);
             }
+            printf("Deleted!\n");
         }
         else if (tree->R){
             ptr=tree->R;
@@ -167,6 +169,7 @@ void rm_list(Tr *tree, int dot){
                 ptr = ptr->Pre;
                 free(ptr);
             }
+            printf("Deleted!\n");
         }
     }
 }
